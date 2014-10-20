@@ -1,0 +1,101 @@
+<ui version="4.0" >
+ <class>StartChallengeDialog</class>
+ <widget class="QWidget" name="StartChallengeDialog" >
+  <property name="windowModality" >
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>184</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>C2 Watt Challenge</string>
+  </property>
+  <property name="styleSheet" >
+   <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(172, 173, 213, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>19</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground" >
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text" >
+    <string>Concept2 Watt Challenge</string>
+   </property>
+   <property name="textFormat" >
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="instructionsLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>391</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text" >
+    <string>Row as long as you can without dropping below the watt level you set.  Once the watt meter drops into the red, the challenge is over. Good Luck!</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap" >
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX" >
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY" >
+   <number>10</number>
+  </property>
+  <property name="gridSnapX" >
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY" >
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible" >
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

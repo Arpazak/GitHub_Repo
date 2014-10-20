@@ -1,0 +1,110 @@
+<ui version="4.0" >
+ <class>VirtualErg</class>
+ <widget class="QWidget" name="VirtualErg" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>180</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Virtual Erg</string>
+  </property>
+  <widget class="QSlider" name="verticalSlider" >
+   <property name="geometry" >
+    <rect>
+     <x>80</x>
+     <y>90</y>
+     <width>21</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="maximum" >
+    <number>100</number>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="tickPosition" >
+    <enum>QSlider::TicksAbove</enum>
+   </property>
+   <property name="tickInterval" >
+    <number>50</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox" >
+   <property name="geometry" >
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>V-Erg % Power</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>verticalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>87</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>89</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>verticalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>95</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>85</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

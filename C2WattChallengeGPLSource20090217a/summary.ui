@@ -1,0 +1,219 @@
+<ui version="4.0" >
+ <class>SummaryDialog</class>
+ <widget class="QWidget" name="SummaryDialog" >
+  <property name="windowModality" >
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>412</width>
+    <height>292</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>C2 Watt Challenge</string>
+  </property>
+  <property name="styleSheet" >
+   <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(172, 173, 213, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text" >
+    <string>Challenge is Over!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="resetButton" >
+   <property name="enabled" >
+    <bool>true</bool>
+   </property>
+   <property name="geometry" >
+    <rect>
+     <x>98</x>
+     <y>236</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+border-radius: 15px;
+border: 2px solid #000000;
+</string>
+   </property>
+   <property name="text" >
+    <string>Try Again</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7" >
+   <property name="geometry" >
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text" >
+    <string>Your Stats:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton" >
+   <property name="enabled" >
+    <bool>true</bool>
+   </property>
+   <property name="geometry" >
+    <rect>
+     <x>228</x>
+     <y>236</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+border-radius: 15px;
+border: 2px solid #000000;
+</string>
+   </property>
+   <property name="text" >
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTime" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>120</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text" >
+    <string>Time Rowed: 19:16</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMeters" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>150</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text" >
+    <string>Meters Rowed: 2597</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCalories" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>180</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet" >
+    <string notr="true" >background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));</string>
+   </property>
+   <property name="text" >
+    <string>Calories Burned: 317</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX" >
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY" >
+   <number>10</number>
+  </property>
+  <property name="gridSnapX" >
+   <bool>false</bool>
+  </property>
+  <property name="gridSnapY" >
+   <bool>false</bool>
+  </property>
+  <property name="gridVisible" >
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
